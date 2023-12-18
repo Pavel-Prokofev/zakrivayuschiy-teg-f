@@ -33,8 +33,16 @@ a {
 button,
 input {
   color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
+  background-color: transparent;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: inherit;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 ul,
