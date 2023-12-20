@@ -30,14 +30,18 @@ a {
   color: inherit;
 }
 
+/* button:disabled,
+button::after,
+button::before,  */
 button,
 input {
   color: currentColor;
-  background-color: transparent;
+  background-color: var(--background-color);
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
   text-transform: inherit;
   outline: none;
   border: none;

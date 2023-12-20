@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Рефлексия о пройденных уроках посвящённых вёрстке">
@@ -25,10 +26,13 @@
   <link rel="stylesheet" href="./styles/animations.css" />
   <link rel="stylesheet" href="./styles/themes.css" />
   <script src="./scripts/set-theme.js"></script>
+
 </head>
 
 <body class="page">
-  <header class="header">
+
+  <header class="header regular-inline-size uppercase">
+
     <h1 class="header__heading">&lt;/HTML&gt;</h1>
     <p class="header__tagline">закрывающий тег</p>
     <nav class="theme-menu header__theme-menu">
@@ -53,24 +57,55 @@
     </nav>
 
   </header>
-  <main class="main">
 
-    <!-- <svg viewBox="0 0 40 40" width="50">
-      <use class="svg1" href="./svg/floppy.svg#floppy">
-    </svg>
+  <main class="main regular-inline-size">
 
-    <svg width="39" height="36" viewBox="0 0 39 36">
-      <use class="svg1" href="./svg/heart-in-paths.svg#heart1"></use>
-      <use class="svg2" href="./svg/heart-in-paths.svg#heart2"></use>
-      <use class="svg3" href="./svg/heart-in-paths.svg#heart3"></use>
-      <use class="svg4" href="./svg/heart-in-paths.svg#heart4"></use>
-    </svg> -->
+    <section>
+      <ul class="galeri">
+        <li class="card">
+          <div class="card__heading-box">
+            <h2 class="card__heading">Фритрек и нулевой спринт: Подготовка к работе</h2>
+            <div class="card__img-box">
+              <img class="card__img" src="./images/basic-picture.jpg"
+                alt="Белый дом на колёсах, в технике пиксель-арт, на ночной улице">
+              <span class="label uppercase">&lt;/html&gt;</span>
+            </div>
+          </div>
+          <div class="card__text-box">
+            <p>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И,
+              возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+            <p>Место для ваших воспоминаний о начале обучения.</p>
+          </div>
+          <div class="card__button-box">
+            <button class="card__icon-button" type="button">
+              <svg class="like-icon" viewBox="0 0 39 36">
+                <use class="svg1" href="./svg/heart-in-paths.svg#heart1"></use>
+                <use class="svg2" href="./svg/heart-in-paths.svg#heart2"></use>
+                <use class="svg3" href="./svg/heart-in-paths.svg#heart3"></use>
+                <use class="svg4" href="./svg/heart-in-paths.svg#heart4"></use>
+              </svg>
+            </button>
+            <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
+          </div>
+        </li>
+      </ul>
+    </section>
 
   </main>
+
   <footer class="footer">
 
+    <button class="footer__button">
+      <svg class="footer__button-svg" viewBox="0 0 40 40" width="50">
+        <use class="floppy" href="./svg/floppy.svg#floppy">
+      </svg>
+      <span class="footer__button-text button__text">Сохранить на память</span>
+    </button>
+
   </footer>
+
   <script src="./scripts/like.js"></script>
+
 </body>
 
 </html>
