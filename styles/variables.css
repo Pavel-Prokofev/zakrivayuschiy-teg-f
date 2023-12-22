@@ -6,6 +6,8 @@
   --ordinary-paragraph-font-weight: 400;
   --background-color: #fff;
   --color: #000;
+  --mix-blend-color: var(--background-color);
+  --is-liked-color: red;
   --background-gradient-line-color: #d3d3d3;
   --background-gradient-start-color: #e7e7e7;
   --background-gradient-start-padding: 0.01%;
