@@ -87,7 +87,8 @@
                 <use class="heart__sparks" href="./svg/heart-in-paths.svg#sparks"></use>
               </svg>
             </button>
-            <button class="card__like-button" type="button"><span class="button__text">Like</span></button>
+            <button class="card__like-button regular-button" type="button"><span
+                class="regular-button__text">Like</span></button>
           </div>
         </li>
       </ul>
@@ -97,14 +98,25 @@
 
   <footer class="footer">
 
-    <button class="footer__button">
+    <button class="footer__button regular-button" type="button" onclick="window['popup'].showModal()">
       <svg class="footer__button-svg" viewBox="0 0 40 40" width="50">
         <use class="floppy" href="./svg/floppy.svg#floppy"></use>
       </svg>
-      <span class="footer__button-text button__text">Сохранить на память</span>
+      <span class="footer__button-text regular-button__text" aria-controls="dialog-id">Сохранить на память</span>
     </button>
 
   </footer>
+
+  <dialog class="popup" id="popup">
+    <div class="popup__wrap">
+      <svg class="popup__icon" viewBox="0 0 40 40" width="50">
+        <use class="floppy" href="./svg/floppy.svg#floppy"></use>
+      </svg>
+      <span>Вставьте дискету, чтобы продолжить</span>
+    </div>
+    <button class="popup__button regular-button" type="button" onclick="window['popup'].close()"><span
+        class="regular-button__text">ок</span></button>
+  </dialog>
 
   <script src="./scripts/like.js"></script>
 

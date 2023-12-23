@@ -30,9 +30,6 @@ a {
   color: inherit;
 }
 
-/* button:disabled,
-button::after,
-button::before,  */
 button,
 input {
   color: currentColor;
