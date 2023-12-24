@@ -1,6 +1,6 @@
 /* Этот скрипт использует имена классов theme-menu__button, theme-dark, theme-light и theme-auto;
 еще атрибуты disabled и data-theme. Поэтому их нельзя менять в HTML. */
-
+export const setTheme = () => {
 function changeTheme(theme) {
   document.documentElement.className = '';
   document.documentElement.classList.add(`theme-${theme}`);
@@ -43,3 +43,4 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   });
 });
+};

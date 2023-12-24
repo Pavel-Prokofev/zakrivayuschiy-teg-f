@@ -25,7 +25,7 @@
   font-family: var(--ordinary-font), sans-serif;
   font-style: normal;
   font-size: 18px;
-  font-variation-settings: 'wght' var(--ordinary-heading-font-weight, 700);
+  font-variation-settings: 'wght' var(--ordinary-paragraph-font-weight, 400);
   background-image:
     repeating-linear-gradient(var(--background-gradient-line-color, #d3d3d3) 0 2px, transparent 2px 4px),
     repeating-linear-gradient(90deg, var(--background-gradient-line-color, #d3d3d3) 0 2px, transparent 2px 4px),
@@ -38,7 +38,7 @@
 }
 
 .regular-inline-size {
-  inline-size: clamp(375px, 16.3732rem + 30.1408vw, 696px);
+  inline-size: clamp(375px, 16.2852rem + 30.5164vw, 700px);
 }
 
 .uppercase {
@@ -46,7 +46,7 @@
 }
 
 .header {
-  margin-block-start: 102px;
+  margin-block-start: 100px;
   padding-block: clamp(120px, 7.1479rem + 1.5023vw, 136px) 25px;
   text-align: center;
   border: 2px solid var(--color, #000);
@@ -78,6 +78,7 @@
   align-items: start;
   row-gap: 14px;
   font-size: 0;
+  padding-inline-start: 16px;
 }
 
 .theme-menu__button {
@@ -129,8 +130,10 @@
 }
 
 .main {
-  margin-block-start: 104px;
+  margin-block-start: 100px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .galeri {
@@ -144,7 +147,7 @@
   border: 2px solid var(--color, #000);
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 26px;
   padding-block-end: 25px;
   inline-size: 100%
 }
@@ -155,9 +158,9 @@
 }
 
 .card__heading {
-  padding: 5px 10px;
+  padding: 6px 10px;
   font-size: inherit;
-  font-weight: var(--ordinary-heading-font-weight, 700);
+  font-variation-settings: 'wght' var(--ordinary-heading-font-weight, 700);
   line-height: normal;
 }
 
@@ -171,7 +174,7 @@
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
-  border-block: 2px solid currentColor;
+  outline: 2px solid currentColor;
   background-image: linear-gradient(135deg, #fff,
       #d1dc9d,
       #f09d0c,
@@ -213,7 +216,6 @@
   flex-direction: column;
   row-gap: 27px;
   padding-inline: 25px;
-  font-weight: var(--ordinary-paragraph-font-weight, 400);
   line-height: 1.17;
 }
 
@@ -324,7 +326,7 @@
 }
 
 .footer {
-  margin-block: 54px clamp(102px, 6.309rem + 0.2817vw, 105px);
+  margin-block: 50px clamp(102px, 6.309rem + 0.2817vw, 105px);
   display: flex;
 }
 
@@ -345,6 +347,8 @@
   mix-blend-mode: difference;
   color: var(--mix-blend-color);
 }
+
+
 
 .popup {
   border: 2px solid var(--color);

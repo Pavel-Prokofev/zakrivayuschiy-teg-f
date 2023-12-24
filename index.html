@@ -25,8 +25,6 @@
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/animations.css" />
   <link rel="stylesheet" href="./styles/themes.css" />
-  <script src="./scripts/set-theme.js"></script>
-
 </head>
 
 <body class="page">
@@ -37,6 +35,7 @@
     <p class="header__tagline">закрывающий тег</p>
     <nav class="theme-menu header__theme-menu">
       <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+      <!-- Ладно, с этим я в прошлый раз быловался, теперь пойду скрипт like перепилю и тимплэйты сочиню =) -->
       <ul class="theme-menu__list">
         <li class="theme-menu__item">
           <button type="button" data-theme="dark" class="theme-menu__button">
@@ -59,52 +58,19 @@
   </header>
 
   <main class="main regular-inline-size">
-
     <section>
       <ul class="galeri">
-        <li class="card">
-          <div class="card__heading-box">
-            <h2 class="card__heading">Фритрек и нулевой спринт: Подготовка к работе</h2>
-            <div class="card__img-box">
-              <img class="card__img" src="./images/basic-picture.jpg"
-                alt="Белый дом на колёсах, в технике пиксель-арт, на ночной улице">
-              <span class="label uppercase">&lt;/html&gt;</span>
-            </div>
-          </div>
-          <div class="card__text-box">
-            <p>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И,
-              возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
-            <p>Место для ваших воспоминаний о начале обучения.</p>
-          </div>
-          <div class="card__button-box">
-            <button class="card__icon-button" type="button">
-              <svg class="heart like-icon" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
-                <g class="heart__box">
-                  <use class="heart__contour" href="./svg/heart-in-paths.svg#contour"></use>
-                  <use class="heart__main-body" href="./svg/heart-in-paths.svg#main-body"></use>
-                  <use class="heart__core" href="./svg/heart-in-paths.svg#core"></use>
-                </g>
-                <use class="heart__sparks" href="./svg/heart-in-paths.svg#sparks"></use>
-              </svg>
-            </button>
-            <button class="card__like-button regular-button" type="button"><span
-                class="regular-button__text">Like</span></button>
-          </div>
-        </li>
       </ul>
     </section>
-
   </main>
 
   <footer class="footer">
-
     <button class="footer__button regular-button" type="button" onclick="window['popup'].showModal()">
       <svg class="footer__button-svg" viewBox="0 0 40 40" width="50">
         <use class="floppy" href="./svg/floppy.svg#floppy"></use>
       </svg>
-      <span class="footer__button-text regular-button__text" aria-controls="dialog-id">Сохранить на память</span>
+      <span class="footer__button-text regular-button__text" aria-controls="popup">Сохранить на память</span>
     </button>
-
   </footer>
 
   <dialog class="popup" id="popup">
@@ -118,7 +84,36 @@
         class="regular-button__text">ок</span></button>
   </dialog>
 
-  <script src="./scripts/like.js"></script>
+  <template id="card-template">
+    <li class="card">
+      <div class="card__heading-box">
+        <h2 class="card__heading"></h2>
+        <div class="card__img-box">
+          <img class="card__img">
+          <span class="label uppercase">
+          </span>
+        </div>
+      </div>
+      <div class="card__text-box">
+      </div>
+      <div class="card__button-box">
+        <button class="card__icon-button" type="button">
+          <svg class="heart like-icon" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
+            <g class="heart__box">
+              <use class="heart__contour" href="./svg/heart-in-paths.svg#contour"></use>
+              <use class="heart__main-body" href="./svg/heart-in-paths.svg#main-body"></use>
+              <use class="heart__core" href="./svg/heart-in-paths.svg#core"></use>
+            </g>
+            <use class="heart__sparks" href="./svg/heart-in-paths.svg#sparks"></use>
+          </svg>
+        </button>
+        <button class="card__like-button regular-button" type="button"><span
+            class="regular-button__text button__text">Like</span></button>
+      </div>
+    </li>
+  </template>
+
+  <script src="./scripts/index.js" type="module" defer></script>
 
 </body>
 
