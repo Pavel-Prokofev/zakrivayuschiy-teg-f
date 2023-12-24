@@ -105,3 +105,18 @@ export const cardConfig = [
     ]
   }
 ];
+
+export const filtersCollection = [
+  'filter_brightness',
+  'filter_contrast',
+  'filter_blur',
+  'filter_opacity',
+  'filter_grayscale',
+  'filter_saturate',
+  'filter_hue-rotate',
+  'filter_sepia',
+  'filter_invert',
+  'filter_brightness_hue-rotate',
+  'filter_invert_saturate',
+  'filter_grayscale_contrast'
+]
