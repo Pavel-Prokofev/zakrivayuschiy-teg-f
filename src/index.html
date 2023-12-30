@@ -10,21 +10,16 @@
 
   <title>Закрывающий тег</title>
 
-  <link rel="icon" href="./images/icon/icon.ico" sizes="any">
-  <link rel="icon" href="./images/icon/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./images/icon/apple-touch-icon.png">
+  <link rel="icon" href="<%=require('./images/icon/icon.ico')%>" sizes="any">
+  <link rel="icon" href="<%=require('./images/icon/icon.svg')%>" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="<%=require('./images/icon/apple-touch-icon.png')%>">
 
   <meta property="og:title" content="Рефлексия о пройденных уроках посвящённых вёрстке">
   <meta property="og:url" content="/">
-  <meta property="og:image" content="./images/basic-picture.jpg">
+  <meta property="og:image" content="<%=require('./images/basic-picture.jpg')%>">
   <meta property="twitter:card" content="summary_large_image">
 
-  <link rel="stylesheet" href="./fonts/fonts.css" />
-  <link rel="stylesheet" href="./styles/variables.css" />
-  <link rel="stylesheet" href="./styles/globals.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <link rel="stylesheet" href="./styles/animations.css" />
-  <link rel="stylesheet" href="./styles/themes.css" />
+  <!-- <link rel="stylesheet" href="index.css" /> -->
 </head>
 
 <body class="page">
@@ -67,7 +62,7 @@
   <footer class="footer">
     <button class="footer__button regular-button" type="button" onclick="window['popup'].showModal()">
       <svg class="footer__button-svg" viewBox="0 0 40 40" width="50">
-        <use class="floppy" href="./svg/floppy.svg#floppy"></use>
+        <use class="floppy" href="<%=require('./svg/floppy.svg')%>#floppy"></use>
       </svg>
       <span class="footer__button-text regular-button__text" aria-controls="popup">Сохранить на память</span>
     </button>
@@ -75,8 +70,8 @@
 
   <dialog class="popup" id="popup">
     <div class="popup__wrap">
-      <svg class="popup__icon" viewBox="0 0 40 40" width="50">
-        <use class="floppy" href="./svg/floppy.svg#floppy"></use>
+      <svg class="popup__icon" viewBox="0 0 40 40" width="50" fill="curentCollor">
+        <use class="floppy" href="<%=require('./svg/floppy.svg')%>#floppy"></use>
       </svg>
       <span>Вставьте дискету, чтобы продолжить</span>
     </div>
@@ -100,11 +95,11 @@
         <button class="card__icon-button" type="button">
           <svg class="heart like-icon" viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
             <g class="heart__box">
-              <use class="heart__contour" href="./svg/heart-in-paths.svg#contour"></use>
-              <use class="heart__main-body" href="./svg/heart-in-paths.svg#main-body"></use>
-              <use class="heart__core" href="./svg/heart-in-paths.svg#core"></use>
+              <use class="heart__contour" href="<%=require('./svg/heart-in-paths.svg')%>#contour"></use>
+              <use class="heart__main-body" href="<%=require('./svg/heart-in-paths.svg')%>#main-body"></use>
+              <use class="heart__core" href="<%=require('./svg/heart-in-paths.svg')%>#core"></use>
             </g>
-            <use class="heart__sparks" href="./svg/heart-in-paths.svg#sparks"></use>
+            <use class="heart__sparks" href="<%=require('./svg/heart-in-paths.svg')%>#sparks"></use>
           </svg>
         </button>
         <button class="card__like-button regular-button" type="button"><span
@@ -113,7 +108,7 @@
     </li>
   </template>
 
-  <script src="./scripts/index.js" type="module"></script>
+  <!-- <script src="./index.js" type="module"></script> -->
 
 </body>
 

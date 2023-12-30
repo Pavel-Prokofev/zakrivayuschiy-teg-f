@@ -1,7 +1,26 @@
+
+const atTheBeginning = new URL('../images/at-the-beginning.jpg', import.meta.url);
+const fearOfTheNew = new URL('../images/fear-of-the-new.jpg', import.meta.url);
+const yippee = new URL('../images/yippee.jpg', import.meta.url);
+const perfectHell = new URL('../images/perfect-hell.jpg', import.meta.url);
+const support = new URL('../images/support.jpg', import.meta.url);
+const plan = new URL('../images/plan.jpg', import.meta.url);
+const walk = new URL('../images/walk.jpg', import.meta.url);
+const crossroad = new URL('../images/crossroad.jpg', import.meta.url);
+
+// import atTheBeginning from '../images/at-the-beginning.jpg';
+// import fearOfTheNew from '../images/fear-of-the-new.jpg';
+// import yippee from '../images/yippee.jpg';
+// import perfectHell from '../images/perfect-hell.jpg';
+// import support from '../images/support.jpg';
+// import plan from '../images/plan.jpg';
+// import walk from '../images/walk.jpg';
+// import crossroad from '../images/crossroad.jpg';
+
 export const cardConfig = [
   {
     heading: 'Фритрек и нулевой спринт: Подготовка к работе',
-    imageURL: './images/at-the-beginning.jpg',
+    imageURL: atTheBeginning,
     imageAlt: 'Лестница в небо.',
     label: `</html>`,
     cardText: [
@@ -13,7 +32,7 @@ export const cardConfig = [
   },
   {
     heading: '1 спринт: Я — чистый лист',
-    imageURL: './images/fear-of-the-new.jpg',
+    imageURL: fearOfTheNew,
     imageAlt: 'Мужчина, обхвативший, в страхе, голову руками',
     label: '</html>',
     cardText: [
@@ -27,7 +46,7 @@ export const cardConfig = [
   },
   {
     heading: '1 спринт: А если не получится?',
-    imageURL: './images/yippee.jpg',
+    imageURL: yippee,
     imageAlt: 'ородской праздник, веселье, воздушные шары, а на переднем плане радостная собака в пиджаке.',
     label: '<css>',
     cardText: [
@@ -39,7 +58,7 @@ export const cardConfig = [
   },
   {
     heading: '2 спринт: Погоня за идеалом',
-    imageURL: './images/perfect-hell.jpg',
+    imageURL: perfectHell,
     imageAlt: 'Не сошндщийся ресунок из плиток, который должен был быть симметричным.',
     label: '<desigions>',
     cardText: [
@@ -52,7 +71,7 @@ export const cardConfig = [
   },
   {
     heading: '2 спринт: О тех, кто рядом',
-    imageURL: './images/support.jpg',
+    imageURL: support,
     imageAlt: 'Мем: кот поддерживает спину человека, сидящего на стуле, держась лапами за спинку этого стула.',
     label: '<care>',
     cardText: [
@@ -66,7 +85,7 @@ export const cardConfig = [
   },
   {
     heading: '3 спринт: Обходные стратегии',
-    imageURL: './images/plan.jpg',
+    imageURL: plan,
     imageAlt: 'Плавная линия плана А, более изогнутая линия плана Б, и запутанная кривая реальности при осуществлении этих планов.',
     label: '<support>',
     cardText: [
@@ -78,7 +97,7 @@ export const cardConfig = [
   },
   {
     heading: '3 спринт: Когда опускаются руки',
-    imageURL: './images/walk.jpg',
+    imageURL: walk,
     imageAlt: 'Мужчина на прогулке в весеннем парке.',
     label: '<lifes-style: none;>',
     cardText: [
@@ -91,7 +110,7 @@ export const cardConfig = [
   },
   {
     heading: '«Сейчас я здесь»',
-    imageURL: './images/crossroad.jpg',
+    imageURL: crossroad,
     imageAlt: 'Большая развязка автодорог. Аэро-фотосьёмка.',
     label: '<experience>',
     cardText: [
@@ -115,8 +134,8 @@ export const filtersCollection = [
   'filter_saturate',
   'filter_hue-rotate',
   'filter_sepia',
-  'filter_invert',
+  // 'filter_invert',
   'filter_brightness_hue-rotate',
-  'filter_invert_saturate',
+  // 'filter_invert_saturate',
   'filter_grayscale_contrast'
 ]
